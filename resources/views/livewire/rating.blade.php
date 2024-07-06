@@ -2,7 +2,7 @@
   <h1 class="text-4xl font-black leading-6 text-gray-800 text-center mb-12">Рейтинг голосования</h1>
   <table class="w-full max-w-[1231px] border-collapse">
     <thead>
-      <tr class="grid grid-cols-4 gap-5 px-9 py-10 text-xl leading-6 rounded-lg bg-slate-50 text-slate-500 max-md:px-5">
+      <tr class="grid grid-cols-4 gap-5 px-8 py-10 text-xl leading-6 rounded-lg bg-slate-50 text-slate-500 max-md:px-5">
         <th class="text-center">Место</th>
         <th class="text-center">Название работы</th>
         <th class="text-center">Количество голосов</th>

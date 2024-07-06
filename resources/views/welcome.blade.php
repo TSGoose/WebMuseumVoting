@@ -19,6 +19,7 @@
             <livewire:main/>   
             <livewire:discription/>          
             <livewire:rating/>
+            <livewire:cards.member-horizontal/>
             <livewire:cards.member-vertical/>
 
         </div>
