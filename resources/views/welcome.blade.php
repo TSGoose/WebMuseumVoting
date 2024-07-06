@@ -18,6 +18,8 @@
             <livewire:hat/>  
             <livewire:main/>           
             <livewire:rating/>
+            <livewire:main/>
+            <livewire:discription/>            
             <livewire:cards.member-vertical/>
 
         </div>
