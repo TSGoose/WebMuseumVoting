@@ -17,6 +17,7 @@
         <div class="">
             <livewire:hat/>  
             <livewire:main/>           
+            <livewire:rating/>
             <livewire:cards.member-vertical/>
 
         </div>
