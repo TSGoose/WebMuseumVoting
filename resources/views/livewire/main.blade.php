@@ -18,7 +18,7 @@
 
         </p>
 
-        <a href="#" class="justify-center self-center px-7 py-3.5 mt-8 text-xl font-black leading-6 bg-blue-600 rounded-md max-md:px-5" tabindex="0" role="button">
+        <a href="/voting" class="justify-center self-center px-7 py-3.5 mt-8 text-xl font-black leading-6 bg-blue-600 rounded-md max-md:px-5" tabindex="0" role="button">
 
           Перейти к голосованию
 

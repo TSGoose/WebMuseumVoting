@@ -14,13 +14,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
-        <div class="">
-            <livewire:hat/>  
-            <livewire:main/>   
-            <livewire:discription/>          
-            <livewire:rating/>
-            <livewire:example-of-member>
-            <livewire:footer/>
-        </div>
+        @yield('content')
     </body>
 </html>
