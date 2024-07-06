@@ -18,7 +18,7 @@
 
     <div class="flex gap-5 justify-between py-1 mt-7">
 
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7221698c2ae5e82a52bda1ba0e9966f9eff68394a12a265ce7fdfa748d5b4b9f?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&" class="shrink-0 w-8 aspect-square fill-zinc-700" alt="Audio player icon" />
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7221698c2ae5e82a52bda1ba0e9966f9eff68394a12a265ce7fdfa748d5b4b9f?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&" class="shrink-0 w-8 aspect-square fill-zinc-700 " alt="Audio player icon" />
 
       <div class="flex flex-col justify-center my-auto rounded-full bg-slate-100">
 

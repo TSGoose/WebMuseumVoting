@@ -1,10 +1,10 @@
-<article class="rounded-lg shadow-sm my-10">
+<article class="rounded-lg shadow my-10">
   <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-    <div class="flex flex-col w-[35%] max-md:ml-0 max-md:w-full">
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/adef5a7fcac817fadda5d3f81a3f5e69b6030a96fa301d80c3787b8852850cd6?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&" alt="Утро в сосновом лесу painting" class="grow w-full aspect-[1.85]" />
+    <div class="rounded-l-lg flex flex-col w-[35%] max-md:ml-0 max-md:w-full bg-cover bg-center bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/adef5a7fcac817fadda5d3f81a3f5e69b6030a96fa301d80c3787b8852850cd6?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&')]">
+
     </div>
-    <div class="flex flex-col ml-5 w-[65%] max-md:ml-0 max-md:w-full">
-      <section class="grow justify-center px-9 py-8 w-full bg-white max-md:px-5 max-md:max-w-full">
+    <div class="flex flex-col items-center ml-5 w-[65%] max-md:ml-0 max-md:w-full">
+      <section class="flex items-center grow justify-center w-full bg-white max-md:px-5 max-md:max-w-full">
         <div class="flex gap-5 max-md:flex-col max-md:gap-0">
           <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div class="flex flex-col grow text-center max-md:mt-10">

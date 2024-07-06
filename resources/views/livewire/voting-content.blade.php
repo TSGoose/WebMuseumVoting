@@ -1,4 +1,4 @@
-<div class="mx-60">
+<div class="w-1/2 m-auto">
     <livewire:cards.member-horizontal/>
     <livewire:cards.member-horizontal/>
     <livewire:cards.member-horizontal/>
