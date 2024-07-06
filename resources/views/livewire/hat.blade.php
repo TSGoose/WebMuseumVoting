@@ -1,8 +1,8 @@
 <header class="flex justify-center items-center px-16 py-8 font-black bg-blue-600 max-md:px-5">
 
-  <div class="flex gap-5 w-full max-w-[1650px] max-md:flex-wrap max-md:max-w-full">
+  <div class="flex items-center gap-5 w-full max-w-[1650px] max-md:flex-wrap max-md:max-w-full">
 
-    <h1 class="flex-auto my-auto text-4xl text-white leading-[54px]">Голосование</h1>
+    <a href="/" class="flex-auto my-auto text-4xl text-white leading-[54px]">Голосование</a>
 
     <nav>
 

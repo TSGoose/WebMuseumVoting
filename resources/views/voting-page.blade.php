@@ -1,5 +1,6 @@
 @extends('welcome')
 
 @section('content')
-    <livewire:hat/>  
+    <livewire:hat/>
+    <livewire:voting-content/>  
 @endsection

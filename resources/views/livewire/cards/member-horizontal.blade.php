@@ -1,4 +1,4 @@
-<article class="rounded-lg shadow-sm">
+<article class="rounded-lg shadow-sm my-10">
   <div class="flex gap-5 max-md:flex-col max-md:gap-0">
     <div class="flex flex-col w-[35%] max-md:ml-0 max-md:w-full">
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/adef5a7fcac817fadda5d3f81a3f5e69b6030a96fa301d80c3787b8852850cd6?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&" alt="Утро в сосновом лесу painting" class="grow w-full aspect-[1.85]" />
