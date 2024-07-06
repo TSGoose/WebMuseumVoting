@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center px-10 py-14 text-2xl leading-6 bg-white rounded-lg border border-solid shadow-lg border-slate-200 max-md:px-5">
+<section class="flex flex-col items-center px-10 py-14 text-2xl leading-6 bg-white rounded-lg border border-solid shadow-lg border-slate-200 max-md:px-5 mx-60">
   <h1 class="text-4xl font-black leading-6 text-gray-800 text-center mb-12">Рейтинг голосования</h1>
   <table class="w-full max-w-[1231px] border-collapse">
     <thead>
