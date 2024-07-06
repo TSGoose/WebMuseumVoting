@@ -21,7 +21,7 @@
             <livewire:rating/>
             <livewire:cards.member-horizontal/>
             <livewire:cards.member-vertical/>
-
+            <livewire:footer/>
         </div>
     </body>
 </html>
