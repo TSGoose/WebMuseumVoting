@@ -16,7 +16,8 @@
     <body class="antialiased">
         <div class="">
             <livewire:hat/>  
-            <livewire:main/>           
+            <livewire:main/>
+            <livewire:discription/>            
             <livewire:cards.member-vertical/>
 
         </div>
