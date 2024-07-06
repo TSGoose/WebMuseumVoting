@@ -20,7 +20,7 @@
             <livewire:discription/>          
             <livewire:rating/>
             <livewire:cards.member-vertical/>
-
+            <livewire:footer/>
         </div>
     </body>
 </html>
