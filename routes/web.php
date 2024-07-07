@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VotingMemberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'main-page');
 
 Route::view('/voting', 'voting-page');
+
+Route::get('/members/{id}/', 'VotingMemberController@getGorizontalById');

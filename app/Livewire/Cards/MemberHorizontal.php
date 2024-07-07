@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Cards;
 
+use App\Models\VotingMember;
 use Livewire\Component;
 
 class MemberHorizontal extends Component

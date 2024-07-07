@@ -8,11 +8,12 @@
     </div>
     <div class="flex flex-col items-center ml-5 w-[65%] max-md:ml-0 max-md:w-full">
       <section class="flex items-center grow justify-center w-full bg-white max-md:px-5 max-md:max-w-full">
-        <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+        <div class="flex w-full gap-5 max-md:flex-col max-md:gap-0">
           <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div class="flex flex-col grow text-center max-md:mt-10">
-              <h2 class="text-2xl font-semibold leading-7 text-gray-900">Утро в сосновом лесу</h2>
-              <p class="mt-4 text-base leading-6 text-gray-500">«Утро в сосновом лесу» — картина русских живописцев Ивана Шишкина и Константина Савицкого, написанная в 1889 году</p>
+              <h2 class="text-2xl font-semibold leading-7 text-gray-900">{{ $member->title }}</h2>
+              <p class="mt-4 text-base leading-6 text-gray-500">{{ $member->description }}</p>
+              <p class="mt-4 text-base leading-6 text-gray-500">{{ $member->author }}</p>
             </div>
           </div>
           <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
@@ -27,7 +28,7 @@
                 Отменить голос
               </button>
               <div class="self-center text-center mt-1">
-                <p class="text-base font-medium leading-6 text-gray-500 max-w-[89px]">Голосов: 15</p>
+                <p class="text-base font-medium leading-6 text-gray-500 max-w-[89px]">Голосов: {{ $member->votes }}</p>
               </div>             
             </div>
           </div>
