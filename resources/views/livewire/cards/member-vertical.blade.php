@@ -28,9 +28,12 @@
         <div class="shrink-0 h-2 rounded-full bg-zinc-700" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 
       </div>
+ 
 
     </div>
-
+    <div class="self-center text-center mt-1">
+              <p class="text-base font-medium leading-6 text-gray-500 max-w-[89px]">Голосов: 15</p>
+    </div> 
   </div>
 
 </article>
