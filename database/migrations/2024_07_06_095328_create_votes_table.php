@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('votes', function (Blueprint $table) {
             $table->id();
+            $table->string('login');
+            $table->foreignIdFor(\App\Models\VotingMember::class, 'voting_member_id')->constrained('voting_members');
             $table->timestamps();
         });
     }
