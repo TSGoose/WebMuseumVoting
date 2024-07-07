@@ -20,7 +20,7 @@
                   <div class="shrink-0 h-2 rounded-full bg-zinc-700"></div>
                 </div>
               </div>
-              <button class="justify-center self-center px-7 py-3 mt-6 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] max-md:px-5">
+              <button class="justify-center self-center px-7 py-3 mt-6 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] max-md:px-5 hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
                 Отменить голос
               </button>
             </div>

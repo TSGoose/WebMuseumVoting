@@ -6,7 +6,7 @@
 
     <nav>
 
-      <a href="#" class="inline-block px-7 py-2.5 text-xl leading-6 text-center text-blue-600 bg-white rounded-md max-md:px-5" tabindex="0">Войти через VK</a>
+      <a href="#" class="inline-block px-7 py-2.5 text-xl leading-6 text-center text-blue-600 bg-white rounded-md max-md:px-5 hover:text-white hover:bg-blue-600 hover:outline hover:outline-white" tabindex="0">Войти через VK</a>
 
     </nav>
 
