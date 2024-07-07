@@ -28,6 +28,13 @@ class VoteMemberSeeder extends Seeder
                 'author' => 'author 2',
                 'images' => 'image4.jpg;image5.jpg;', 
                 'music' => 'music2.mp3'
+            ],
+            [
+                'title' => 'title3',
+                'description' => 'desc3',
+                'author' => 'author 3',
+                'images' => 'image3.jpg;image4.jpg;', 
+                'music' => 'music3.mp3'
             ]
         ];
 

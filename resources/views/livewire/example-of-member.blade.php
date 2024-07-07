@@ -5,9 +5,11 @@
   </h2>
   <div class="flex flex-col items-center mt-16 w-full max-md:mt-10 max-md:max-w-full">
     <div class="flex gap-40">
-        <livewire:cards.member-vertical/>
-        <livewire:cards.member-vertical/>
-        <livewire:cards.member-vertical/>
+        @foreach($members as $member)
+        <!--<livewire:cards.member-horizontal :member = $member/>  @include("livewire.cards.member-horizontal", ['member' => $member])-->
+        @livewire('cards.member-vertical', ['member' => $member])
+        
+    @endforeach
     </div>
   </div>
 </section>
