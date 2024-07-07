@@ -6,21 +6,23 @@ use Livewire\Component;
 
 class MemberVertical extends Component
 {
-    public int $indexImg = 0;
-
+    public $indexImg = 0;
+    public $member;
+    public $images;
     public function left()
     {
-        $this->indexImg --;
+        $this->indexImg = (count($this->images) + ($this->indexImg - 1)) % count($this->images);
     }
 
     public function right()
     {
-        dd($this->member);
-        $this->indexImg = $this->indexImg;
+        $this->indexImg = ($this->indexImg + 1) % count($this->images);
     }
 
     public function render()
     {
-        return view('livewire.cards.member-vertical');
+        $this->images = array_slice(explode(";", $this->member->images), 0, -1);
+        
+        return view('livewire.cards.member-vertical', ['images' => $this->images]);
     }
 }
