@@ -1,14 +1,15 @@
 <article class="rounded-lg shadow my-10">
   <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-    <div class="rounded-l-lg flex flex-row items-center justify-between w-[35%] max-md:ml-0 max-md:w-full bg-cover bg-center]">
-        <img src="{{ $images[$indexImg] }}" alt="">
-        <button type="button" wire:click="left" class="flex justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 rounded-l-lg" ><livewire:buttons.arrow/></button> 
-        <button type="button" wire:click="right" class="flex justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
-    
-    </div>
+    <div class="relative overflow-hidden rounded-l-lg flex flex-row items-center justify-between w-[35%] max-md:ml-0 max-md:w-full]">
+        <img src="{{ $images[$indexImg] }}" alt="" class = "absolute z-1">  
+        <div class = "absolute z-2 w-full h-full flex justify-row justify-between"> 
+          <button type="button" wire:click="left" class="flex justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 " ><livewire:buttons.arrow/></button> 
+          <button type="button" wire:click="right" class="flex justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
+        </div>  
+      </div>
     <div class="flex flex-col items-center ml-5 w-[65%] max-md:ml-0 max-md:w-full">
       <section class="flex items-center grow justify-center w-full bg-white max-md:px-5 max-md:max-w-full">
-        <div class="flex w-full gap-5 max-md:flex-col max-md:gap-0">
+        <div class="flex items-center w-full gap-5 max-md:flex-col max-md:gap-0">
           <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div class="flex flex-col grow text-center max-md:mt-10">
               <h2 class="text-2xl font-semibold leading-7 text-gray-900">{{ $member->title }}</h2>
