@@ -1,6 +1,9 @@
 <article class="flex flex-col rounded-lg shadow-sm max-w-[370px]">
 
-  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/adef5a7fcac817fadda5d3f81a3f5e69b6030a96fa301d80c3787b8852850cd6?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&" class="w-full aspect-[1.85]" alt="Утро в сосновом лесу painting" />
+  <div  class="flex justify-between items-center w-full aspect-[1.85] rounded-t-lg bg-cover bg-center bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/50c8f2882bca7fabe913eaa22930fec71368321080635b3c15be6ea6c588c493?apiKey=6af3166b190849ae913a27151a2b7816&')]" alt="Утро в сосновом лесу painting">
+    <button class = "flex justify-center items-center h-full w-2/12 bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 rounded-l-lg"><livewire:buttons.arrow/></button> 
+    <button class = "flex justify-center items-center h-full w-2/12 bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
+  </div>
 
   <div class="flex flex-col px-9 py-8 w-full bg-white">
 
