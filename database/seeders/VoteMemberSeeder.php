@@ -18,7 +18,7 @@ class VoteMemberSeeder extends Seeder
                 'title' => 'title1',
                 'description' => 'desc1',
                 'author' => 'author 1',
-                'images' => 'image1.png;image2.png;image3.png;', 
+                'images' => 'image1.jpg;image2.jpg;image3.jpg;', 
                 'music' => 'music1.mp3', 
                 'votes' => 0
             ],
@@ -26,7 +26,7 @@ class VoteMemberSeeder extends Seeder
                 'title' => 'title2',
                 'description' => 'desc2',
                 'author' => 'author 2',
-                'images' => 'image4.png;image5.png;', 
+                'images' => 'image4.jpg;image5.jpg;', 
                 'music' => 'music2.mp3'
             ]
         ];
