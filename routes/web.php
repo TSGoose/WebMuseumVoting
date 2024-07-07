@@ -17,5 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'main-page');
 
 Route::view('/voting', 'voting-page');
-
-Route::get('/members/{id}/', 'VotingMemberController@getGorizontalById');

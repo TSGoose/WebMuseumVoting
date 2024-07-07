@@ -9,6 +9,6 @@ class VotingContent extends Component
 {
     public function render()
     {
-        return view('livewire.voting-content', ['members' => VotingMember::all()]);
+        return view('livewire.voting-content', ['members' => VotingMember::all(), 'images' => [0], 'indexImg' => 0]);
     }
 }
