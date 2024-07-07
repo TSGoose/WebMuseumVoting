@@ -1,7 +1,10 @@
 <article class="rounded-lg shadow my-10">
   <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-    <div class="rounded-l-lg flex flex-col w-[35%] max-md:ml-0 max-md:w-full bg-cover bg-center bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/adef5a7fcac817fadda5d3f81a3f5e69b6030a96fa301d80c3787b8852850cd6?apiKey=91f2b3c7e1024281a6c7da0dfb0eaca6&')]">
+    <div class="rounded-l-lg flex flex-row items-center justify-between w-[35%] max-md:ml-0 max-md:w-full bg-cover bg-center bg-[url('https://cdn.builder.io/api/v1/image/assets/TEMP/50c8f2882bca7fabe913eaa22930fec71368321080635b3c15be6ea6c588c493?apiKey=6af3166b190849ae913a27151a2b7816&')]">
 
+        <button class = "flex justify-between items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 rounded-l-lg"><livewire:buttons.arrow/></button> 
+        <button class = "flex justify-between items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
+    
     </div>
     <div class="flex flex-col items-center ml-5 w-[65%] max-md:ml-0 max-md:w-full">
       <section class="flex items-center grow justify-center w-full bg-white max-md:px-5 max-md:max-w-full">
