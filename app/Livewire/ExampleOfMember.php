@@ -13,6 +13,6 @@ class ExampleOfMember extends Component
             VotingMember::select()           
             ->orderBy('votes', 'desc')   
             ->take(3)                          
-            ->get(), 'images' => [0], 'indexImg' => 0]);
+            ->get(), 'images' => [0], 'indexImg' => 0, 'hideLeftArrow' => 1, 'hideRightArrow' => 0]);
     }
 }

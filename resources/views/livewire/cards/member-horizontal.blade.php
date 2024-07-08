@@ -7,7 +7,7 @@
             <div class = "w-10/12">
               <button type="button" wire:click="left" class="flex {{ $hideLeftArrow ? 'hidden' : '' }} justify-center items-center w-1/5 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 " ><livewire:buttons.arrow/></button> 
             </div> 
-            <button type="button" wire:click="right" class="flex {{ $hideRightArrow ? 'hidden' : '' }} justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
+              <button type="button" wire:click="right" class="flex {{ $hideRightArrow ? 'hidden' : '' }} justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button> 
           </div>  
       </div>
     <div class="flex flex-col max-md:flex-col max-md:gap-0 w-[65%]">
