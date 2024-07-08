@@ -1,5 +1,5 @@
 <article class="rounded-lg shadow my-10">
-  
+
     <div class="flex overflow-hidden  flex-row justify-between">
       <div class="relative overflow-hidden rounded-l-lg flex flex-row items-center justify-between w-[35%] max-md:ml-0 max-md:w-full]">
           <img src="{{ $images[$indexImg] }}" alt="" class = "absolute z-1">  
