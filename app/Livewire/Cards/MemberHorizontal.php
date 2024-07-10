@@ -14,6 +14,10 @@ class MemberHorizontal extends Component
     public $hideLeftArrow = false;
     public $hideRightArrow = false;
 
+    public function clickImg(){
+        echo '<div class = "fixed left-0 top-0 w-full h-full z-[100]"><livewire:big-picture/></div>';
+    }
+
     public function mount($member)
     {
         $this->member = $member;

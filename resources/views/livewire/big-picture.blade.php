@@ -1,4 +1,4 @@
-<section class="flex flex-col items-center px-96 pt-52  bg-gray-900 bg-opacity-90 bg-cover">
+<section class="flex flex-col items-center px-96 pt-52  bg-gray-900 bg-opacity-40 bg-cover">
 
     <div class="relative overflow-hidden flex flex-row mb-52 items-center justify-between max-md:ml-0 max-md:w-full]">
         <img src="image1.jpg" alt="" class = " z-1 object-cover  max-md:w-full]">  
