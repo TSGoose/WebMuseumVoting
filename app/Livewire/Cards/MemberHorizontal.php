@@ -47,6 +47,7 @@ class MemberHorizontal extends Component
 
     public function render()
     {
+        $this->images = array_slice(explode(";", $this->member->images), 0, -1);
         return view('livewire.cards.member-horizontal', [
             'images' => $this->images
         ]);
