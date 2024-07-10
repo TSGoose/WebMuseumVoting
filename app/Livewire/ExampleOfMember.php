@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class ExampleOfMember extends Component
 {
+    public $index = 0;
     public function render()
     {
         return view('livewire.example-of-member', ['members' => 

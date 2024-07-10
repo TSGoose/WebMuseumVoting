@@ -23,9 +23,15 @@
           </div>
           <div class="flex flex-col w-full lg:w-6/12">
             <div class="flex flex-col grow justify-end pt-6 pb-3.5 lg:mt-10">
-              <button class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
-                Отменить голос
-              </button>
+              @if (!$selected)
+                <button wire:click.prevent="clickSelect" class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                  Отменить голос
+                </button>
+              @else
+                <button class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                  Отменить голос
+                </button>
+              @endif
               <div class="self-center text-center mt-1">
                 <p class="text-base font-medium leading-6 text-gray-500 max-w-[89px]">Голосов: {{ $member->votes }}</p>
               </div>
