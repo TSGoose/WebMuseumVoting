@@ -28,10 +28,9 @@
               </audio>
               <div class="flex flex-row items-center">
                   <button onclick="document.getElementById('song').volume -= 0.1" class=" px-2 mx-1"><livewire:buttons.volume1/></button>              
-                  <button onclick="document.getElementById('song').currentTime = 0" class="px-2 mx-1"><livewire:buttons.skipback/></button>
+                  <button onclick="document.getElementById('song').currentTime = 0, document.getElementById('song').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>
                   <button onclick="document.getElementById('song').play()" class="px-2 mx-1"><livewire:buttons.play/></button>
                   <button onclick="document.getElementById('song').pause()" class="px-2 mx-1"><livewire:buttons.pause/></button>
-                  <button onclick="document.getElementById('song').currentTime = document.getElementById('song').duration" class="px-2 mx-1"><livewire:buttons.skipnext/></button>
                   <button onclick="document.getElementById('song').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume2/></button>
               </div>
             </div>
