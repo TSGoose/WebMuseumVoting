@@ -26,16 +26,20 @@ class MemberVertical extends Component
 
     public function left()
     {
-        $imagesCount = count($this->images);
-        $this->indexImg = ($imagesCount + ($this->indexImg - 1)) % $imagesCount;
-        $this->handleArrowVisibility();
+        if (!$this->hideLeftArrow){
+            $imagesCount = count($this->images);
+            $this->indexImg = ($imagesCount + ($this->indexImg - 1)) % $imagesCount;
+            $this->handleArrowVisibility();
+        }
     }
 
     public function right()
     {
-        $imagesCount = count($this->images);
-        $this->indexImg = ($this->indexImg + 1) % $imagesCount;
-        $this->handleArrowVisibility();
+        if (!$this->hideRightArrow){
+            $imagesCount = count($this->images);
+            $this->indexImg = ($this->indexImg + 1) % $imagesCount;
+            $this->handleArrowVisibility();
+        }
     }
     public function render()
     {

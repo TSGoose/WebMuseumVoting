@@ -39,7 +39,7 @@
 
     </div>
     <div class = "flex flex-row justify-between items-center">
-        <audio controls src="music1.mp3" class = "bg-blue-600   saturate-200   rounded-b-lg w-full"></audio>
+        <audio controls src="{{ $member->music }}" class = "bg-blue-600   saturate-200   rounded-b-lg w-full"></audio>
     </div>
 
   </div>

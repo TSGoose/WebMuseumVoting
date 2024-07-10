@@ -30,7 +30,7 @@
         </section>
       </div>
       <div class="flex justify-between items-center">
-        <audio controls src="music1.mp3" class="rounded-b-lg lg:rounded-bl-none lg:rounded-br-lg w-full"></audio>
+        <audio controls src="{{ $member->music }}" class="rounded-b-lg lg:rounded-bl-none lg:rounded-br-lg w-full"></audio>
       </div>
     </div>
   </div>
