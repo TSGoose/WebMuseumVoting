@@ -3,8 +3,10 @@
     <div class="relative overflow-hidden rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none flex items-center w-full lg:w-[35%] min-h-[250px]">
       <img src="{{ $images[$indexImg] }}" alt="" class="absolute z-1 object-cover w-full h-full">
       <div class="absolute w-full h-full flex justify-between">
+        <div class ="w-10/12">
         <button type="button" wire:click="left" class="flex {{ $hideLeftArrow ? 'hidden' : '' }} justify-center items-center w-1/5 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5"><livewire:buttons.arrow/></button>
-        <button type="button" wire:click="right" class="flex {{ $hideRightArrow ? 'hidden' : '' }} justify-center items-center w-1/5 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button>
+        </div> 
+        <button type="button" wire:click="right" class="flex {{ $hideRightArrow ? 'hidden' : '' }} justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 scale-x-[-1]"><livewire:buttons.arrow/></button>
       </div>
     </div>
     <div class="flex flex-col w-full lg:w-[65%]">
@@ -30,7 +32,7 @@
         </section>
       </div>
       <div class="flex justify-between items-center">
-        <audio controls src="music1.mp3" class="rounded-b-lg lg:rounded-bl-none lg:rounded-br-lg w-full"></audio>
+        <audio controls src="music1.mp3" class="rounded-b-lg bg-blue-600 lg:rounded-bl-none lg:rounded-br-lg w-full"></audio>
       </div>
     </div>
   </div>
