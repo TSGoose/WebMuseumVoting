@@ -45,6 +45,4 @@
         <audio controls src="{{ $member->music }}" class = "bg-blue-600   saturate-200   rounded-b-lg w-full"></audio>
     </div>
 
-  </div>
-
 </article>
