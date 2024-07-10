@@ -20,7 +20,7 @@ class MemberHorizontal extends Component
     }
 
     public function clickSelect(){
-        $this->selected = true;
+        $this->selected = abs($this->selected - 1);
     }
 
     public function mount($member)

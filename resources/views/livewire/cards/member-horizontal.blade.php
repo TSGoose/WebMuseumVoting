@@ -23,22 +23,28 @@
           </div>
           <div class="flex flex-col h-full w-full lg:w-6/12">
             <div class="flex flex-col justify-center items-center h-1/2 text-xl font-mono w-full rounded-md text-white" >
-              <audio id="song" class="hidden w-full max-w-md mx-auto" controls>
+              <audio id="song-{{ $member->music }}" class="hidden w-full max-w-md mx-auto" controls>
                 <source src="{{ $member->music }}" type="audio/mpeg">
               </audio>
               <div class="flex flex-row items-center">
-                  <button onclick="document.getElementById('song').volume -= 0.1" class=" px-2 mx-1"><livewire:buttons.volume1/></button>              
-                  <button onclick="document.getElementById('song').currentTime = 0, document.getElementById('song').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>
-                  <button onclick="document.getElementById('song').play()" class="px-2 mx-1"><livewire:buttons.play/></button>
-                  <button onclick="document.getElementById('song').pause()" class="px-2 mx-1"><livewire:buttons.pause/></button>
-                  <button onclick="document.getElementById('song').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume2/></button>
+                  <button onclick="document.getElementById('song-{{ $member->music }}').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume1/></button>              
+                  <button onclick="document.getElementById('song-{{ $member->music }}').currentTime = 0, document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>
+                  <button onclick="document.getElementById('song-{{ $member->music }}').play()" class="px-2 mx-1"><livewire:buttons.play/></button>
+                  <button onclick="document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.pause/></button>
+                  <button onclick="document.getElementById('song-{{ $member->music }}').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume2/></button>
               </div>
             </div>
             
             <div class="flex flex-col h-1/2 grow justify-end">
-              <button class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
-                Отменить голос
-              </button>
+              @if (!$selected)
+                  <button wire:click.prevent="clickSelect" class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                    Проголосовать
+                  </button>
+                @else
+                  <button wire:click.prevent="clickSelect" class="justify-center self-center px-7 py-3 mt-2 text-center outline outline-blue-600 text-blue-600 bg-white border border-solid border-zinc-200 rounded-[50px] max-md:px-5 hover:text-white hover:bg-blue-600 hover:outline hover:outline-white">
+                    Отменить голос
+                  </button>
+                @endif
               <div class="self-center text-center mt-1">
                 <p class="text-base font-medium leading-6 text-gray-500 max-w-[89px]">Голосов: {{ $member->votes }}</p>
               </div>
