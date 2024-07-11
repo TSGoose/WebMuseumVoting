@@ -16,7 +16,7 @@ class MemberHorizontal extends Component
     public $selected = false;
 
     public function clickImg(){
-        echo '<div class = "fixed left-0 top-0 w-full h-full z-[100]"><livewire:big-picture/></div>';
+        //echo '<div class = "fixed left-0 top-0 w-full h-full z-[100]"><livewire:big-picture/></div>';
     }
 
     public function clickSelect(){

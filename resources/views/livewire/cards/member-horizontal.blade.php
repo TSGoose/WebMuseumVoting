@@ -2,7 +2,7 @@
   
   <div class="flex flex-col lg:flex-row overflow-hidden justify-between">
     <div class="relative overflow-hidden rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none flex items-center w-full lg:w-[35%] min-h-[250px]">
-    <a href="/" wire:click.prevent="clickImg"><div class = "absolute z-10 w-full h-full bottom-0"></div></a>  
+    <a href="#" wire:click.prevent="clickImg"><div class = "absolute z-10 w-full h-full bottom-0"></div></a>  
     <img src="{{ $images[$indexImg] }}" alt="" class="absolute z-1 object-cover w-full h-full">
       <div class="absolute w-full h-full flex  {{ $hideLeftArrow ?  'justify-end' : 'justify-between'}}">
       
