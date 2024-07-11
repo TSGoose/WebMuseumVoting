@@ -14,8 +14,8 @@
     <div class="flex flex-col w-full lg:w-[65%]">
       <div class="flex flex-col h-full items-center p-5 bg-white">
         <section class="flex flex-col h-full lg:flex-row items-center w-full gap-5">
-          <div class="flex flex-col h-full w-full lg:w-6/12">
-            <div class="flex flex-col grow text-center">
+          <div class="flex flex-col items-center h-full w-full lg:w-6/12">
+            <div class="flex flex-col justify-center items-center grow text-center">
               <h2 class="text-2xl font-semibold leading-7 text-gray-900">{{ $member->title }}</h2>
               <p class="mt-4 text-base leading-6 text-gray-500">{{ $member->description }}</p>
               <p class="mt-4 text-base leading-6 text-gray-500">{{ $member->author }}</p>
@@ -27,21 +27,19 @@
                 <source src="{{ $member->music }}" type="audio/mpeg">
               </audio>
               <div class="flex flex-row items-center">
-                  <button onclick="document.getElementById('song-{{ $member->music }}').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume1/></button>              
                   <button onclick="document.getElementById('song-{{ $member->music }}').currentTime = 0, document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>
                   <button onclick="document.getElementById('song-{{ $member->music }}').play()" class="px-2 mx-1"><livewire:buttons.play/></button>
                   <button onclick="document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.pause/></button>
-                  <button onclick="document.getElementById('song-{{ $member->music }}').volume -= 0.1" class="px-2 mx-1"><livewire:buttons.volume2/></button>
               </div>
             </div>
             
             <div class="flex flex-col h-1/2 grow justify-end">
               @if (!$selected)
-                  <button wire:click.prevent="clickSelect" class="justify-center self-center px-7 py-3 mt-2 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                  <button wire:click.prevent="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-gray-500 whitespace-nowrap border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
                     Проголосовать
                   </button>
                 @else
-                  <button wire:click.prevent="clickSelect" class="justify-center self-center px-7 py-3 mt-2 text-center outline outline-blue-600 text-blue-600 bg-white border border-solid border-zinc-200 rounded-[50px] max-md:px-5 hover:text-white hover:bg-blue-600 hover:outline hover:outline-white">
+                  <button wire:click.prevent="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
                     Отменить голос
                   </button>
                 @endif
