@@ -35,11 +35,11 @@
             
             <div class="flex flex-col h-1/2 grow justify-end">
               @if (!$selected)
-                  <button wire:click.prevent="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-gray-500 whitespace-nowrap border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                  <button onclick="document.getElementById('cb_member-{{ $member->id }}')" wire:click="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-gray-500 whitespace-nowrap border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
                     Проголосовать
                   </button>
                 @else
-                  <button wire:click.prevent="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
+                  <button onclick="document.getElementById('cb_member-{{ $member->id }}')" wire:click="clickSelect" class="justify-center px-7 py-3 text-base font-medium leading-6 text-center text-white bg-blue-600 border border-solid border-zinc-200 rounded-[50px] hover:text-blue-600 hover:bg-white hover:outline hover:outline-blue-600">
                     Отменить голос
                   </button>
                 @endif
