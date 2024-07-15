@@ -2,8 +2,6 @@
 
 namespace App\Livewire\Cards;
 
-namespace App\Livewire\Cards;
-
 use Livewire\Component;
 
 class MemberHorizontal extends Component
@@ -14,12 +12,14 @@ class MemberHorizontal extends Component
     public $hideLeftArrow = false;
     public $hideRightArrow = false;
     public $selected = false;
+    public $cb_members;
 
     public function clickImg(){
         //echo '<div class = "fixed left-0 top-0 w-full h-full z-[100]"><livewire:big-picture/></div>';
     }
 
     public function clickSelect(){
+        $this->dispatch('setSelected', $this->member->id);
         $this->selected = abs($this->selected - 1);
     }
 
