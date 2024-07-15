@@ -14,35 +14,33 @@
   </div>
 
 
-  <div class="flex flex-col px-9 py-8 w-full bg-white items-center">
+  <div class="flex flex-col px-9 py-5 w-full bg-white items-center">
 
     <h2 class="text-2xl font-semibold leading-7 text-center text-gray-900">
-
-    {{ $member->title }}
-
+      {{ $member->title }}
     </h2>
 
     <p class="mt-4 text-base leading-6 text-center text-gray-500">
-
-    {{ $member->description }}
-
+      {{ $member->description }}
     </p>
 
     <p class="mt-4 text-base leading-6 text-center text-gray-500">
-
-    {{ $member->author }}
-
+      {{ $member->author }}
     </p>
-
-    <p class="text-base font-medium leading-6 mt-4 text-gray-500 max-w-[89px]">
-
-    Голосов: {{ $member->votes }}
-
+    <div class="flex flex-col justify-center items-center h-1/2 text-xl font-mono w-full rounded-md text-white mt-2" >
+      <audio id="song-{{ $member->music }}" class="hidden w-full max-w-md mx-auto" controls>
+        <source src="{{ $member->music }}" type="audio/mpeg">
+      </audio>
+      <div class="flex flex-row items-center">
+          <button onclick="document.getElementById('song-{{ $member->music }}').currentTime = 0, document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>
+          <button onclick="document.getElementById('song-{{ $member->music }}').play()" class="px-2 mx-1"><livewire:buttons.play/></button>
+          <button onclick="document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.pause/></button>
+      </div>
+    </div>
+    <p class="text-base font-medium leading-6 mt-2 text-gray-500 max-w-[89px]">
+      Голосов: {{ $member->votes }}
     </p>
+  </div>
 
-    </div>
-    <div class = "flex flex-row justify-between items-center">
-        <audio controls src="{{ $member->music }}" class = "bg-blue-600   saturate-200   rounded-b-lg w-full"></audio>
-    </div>
 
 </article>
