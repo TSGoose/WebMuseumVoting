@@ -3,7 +3,7 @@
   <div class="flex flex-col lg:flex-row overflow-hidden justify-between">
     <div class="relative overflow-hidden rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none flex items-center w-full lg:w-[35%] min-h-[250px]">
     <a href="#" wire:click.prevent="clickImg"><div class = "absolute z-10 w-full h-full bottom-0"></div></a>  
-    <img src="{{ $images[$indexImg] }}" alt="" class="absolute z-1 object-cover w-full h-full">
+      <img src="{{ $images[$indexImg] }}" alt="" class="absolute z-1 object-cover w-full h-full">
       <div class="absolute w-full h-full flex  {{ $hideLeftArrow ?  'justify-end' : 'justify-between'}}">
       
         <button type="button" wire:click="left" class="z-50 flex {{ $hideLeftArrow ? 'hidden' : '' }} justify-center items-center w-2/12 h-full bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5"><livewire:buttons.arrow/></button>
@@ -22,6 +22,7 @@
             </div>
           </div>
           <div class="flex flex-col h-full w-full lg:w-6/12">
+            
             <div class="flex flex-col justify-center items-center h-1/2 text-xl font-mono w-full rounded-md text-white" >
               <audio id="song-{{ $member->music }}" class="hidden w-full max-w-md mx-auto" controls>
                 <source src="{{ $member->music }}" type="audio/mpeg">
