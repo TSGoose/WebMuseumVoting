@@ -10,7 +10,7 @@ class VotingContent extends Component
 {
     public $index = 0;
     public $members;
-    protected $listeners = ['setSelected'];
+    protected $listeners = ['setSelected', 'vote'];
     public $selected = [];
 
     public function vote()
