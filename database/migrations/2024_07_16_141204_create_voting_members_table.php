@@ -13,12 +13,6 @@ return new class extends Migration
     {
         Schema::create('voting_members', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
-            $table->text('description');
-            $table->text('author');
-            $table->text('images');
-            $table->text('music')->nullable();;
-            $table->integer('votes')->default(0);
             $table->timestamps();
         });
     }
