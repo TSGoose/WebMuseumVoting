@@ -14,7 +14,7 @@ class MemberVertical extends Component
     public function mount($member)
     {
         $this->member = $member;
-        $this->images = array_slice(explode(";", $this->member->images), 0, -1);
+        $this->images = $this->member->images;
         $this->handleArrowVisibility();
     }
 
@@ -28,7 +28,7 @@ class MemberVertical extends Component
     {
         if (!$this->hideLeftArrow){
             $imagesCount = count($this->images);
-            $this->indexImg = ($imagesCount + ($this->indexImg - 1)) % $imagesCount;
+            $this->indexImg --;
             $this->handleArrowVisibility();
         }
     }
@@ -37,14 +37,12 @@ class MemberVertical extends Component
     {
         if (!$this->hideRightArrow){
             $imagesCount = count($this->images);
-            $this->indexImg = ($this->indexImg + 1) % $imagesCount;
+            $this->indexImg ++;
             $this->handleArrowVisibility();
         }
     }
     public function render()
-    {
-        $this->images = array_slice(explode(";", $this->member->images), 0, -1);
-        
+    {        
         return view('livewire.cards.member-vertical', ['images' => $this->images]);
     }
 }
