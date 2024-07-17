@@ -3,7 +3,7 @@
   <div  class="flex overflow-hidden relative justify-between items-center w-full aspect-[1.85] rounded-t-lg " alt="">
     <!--<a href="/"><div class = "absolute z-10 w-full h-full bottom-1/2"></div></a>-->
     
-    <img src="{{ $images[$indexImg] }}" alt="">
+    <img loading="lazy" src="{{ Storage::disk('local')->url($images[$indexImg]) }}" alt="" class="absolute z-1 object-cover w-full h-full">
     <div class = "absolute w-full h-full flex justify-row {{ $hideLeftArrow ?  'justify-end' : 'justify-between'}}">
         
         <button type="button" wire:click="left" class = "z-50 flex {{ $hideLeftArrow ? 'hidden' : '' }} justify-center items-center h-full w-2/12 bg-gray-900 bg-opacity-0 hover:bg-opacity-40 px-5 rounded-tl-lg"><livewire:buttons.arrow/></button>        
@@ -29,7 +29,7 @@
     </p>
     <div class="flex flex-col justify-center items-center h-1/2 text-xl font-mono w-full rounded-md text-white mt-2" >
       <audio id="song-{{ $member->music }}" class="hidden w-full max-w-md mx-auto" controls>
-        <source src="{{ $member->music }}" type="audio/mpeg">
+        <source loading="lazy" src="{{ Storage::disk('local')->url($member->music) }}" type="audio/mpeg">
       </audio>
       <div class="flex flex-row items-center">
           <button onclick="document.getElementById('song-{{ $member->music }}').currentTime = 0, document.getElementById('song-{{ $member->music }}').pause()" class="px-2 mx-1"><livewire:buttons.skipback/></button>

@@ -30,8 +30,8 @@ class VotingMemberResource extends Resource
                 Forms\Components\TextInput::make('author')
                     ->required()->maxLength(100),
                 Forms\Components\FileUpload::make('images')
-                    ->multiple()->preserveFilenames()->image()->reorderable()->openable(),
-                Forms\Components\FileUpload::make('music')->preserveFilenames()
+                    ->multiple()->image()->reorderable()->openable()->minFiles(1),
+                Forms\Components\FileUpload::make('music')
             ]);
     }
 

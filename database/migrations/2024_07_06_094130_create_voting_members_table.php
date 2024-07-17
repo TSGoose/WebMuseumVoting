@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->text('author');
             $table->text('images');
-            $table->text('music')->nullable();;
+            $table->text('music')->nullable();
             $table->integer('votes')->default(0);
             $table->timestamps();
         });

@@ -8,7 +8,8 @@ class MemberVertical extends Component
 {
     public $indexImg = 0;
     public $member;
-    public $images;    public $hideLeftArrow = false;
+    public $images = [];    
+    public $hideLeftArrow = false;
     public $hideRightArrow = false;
 
     public function mount($member)
